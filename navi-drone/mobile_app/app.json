@@ -1,0 +1,15 @@
+{
+  "expo": {
+    "name": "Navi Drone",
+    "slug": "navi-drone",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "backgroundColor": "#0B1220"
+    },
+    "ios": { "supportsTablet": true },
+    "android": {},
+    "platforms": ["ios", "android"]
+  }
+}

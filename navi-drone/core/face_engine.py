@@ -73,8 +73,9 @@ class FaceEngine:
         best_name, best_score = "Unknown", -1.0
         for name, embeddings in self.known.items():
             for known_emb in embeddings:
+                known_arr = np.array(known_emb, dtype=np.float32).reshape(1, -1)
                 score = self.recognizer.match(
-                    embedding, np.array(known_emb, dtype=np.float32),
+                    embedding, known_arr,
                     cv2.FaceRecognizerSF_FR_COSINE,
                 )
                 if score > best_score:

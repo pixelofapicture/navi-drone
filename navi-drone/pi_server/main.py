@@ -31,7 +31,7 @@ from face_engine import FaceEngine, draw_results  # noqa: E402
 import database
 
 # ---- config ----
-CAMERA_INDEX = 0
+CAMERA_INDEX = 1
 PROCESS_EVERY_N_FRAMES = 2   # skip frames to keep the Pi 4 CPU happy
 JPEG_QUALITY = 70
 SAME_PERSON_COOLDOWN_S = 15  # don't re-log/re-notify the same person constantly
